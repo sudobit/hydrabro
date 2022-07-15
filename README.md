@@ -1,4 +1,13 @@
-# hydrabro
+```
+_   _           _          ______           
+| | | |         | |         | ___ \          
+| |_| |_   _  __| |_ __ __ _| |_/ /_ __ ___  
+|  _  | | | |/ _` | '__/ _` | ___ \ '__/ _ \ 
+| | | | |_| | (_| | | | (_| | |_/ / | | (_) |
+\_| |_/\__, |\__,_|_|  \__,_\____/|_|  \___/ 
+        __/ |                                
+       |___/                             
+```       
 Hero Wars Hydra Optimizer
 
 This is a python script, which helps to find the best possible solution to kill hydra heads in Hero Wars. It takes a CSV comma-formatted list as input parameter and calculates possible kill configurations. Right now it ignore common and elder hydra and only goes for Ancient, Dreadful and Legendary. The algorithm basically brute forces the best configuration, while trying to use the best player to file the gap. This is why creating a lot of configurations is necessary to achieve good results. In our guild it achieves like the 95% top result and can be improved with some handy work after. 
