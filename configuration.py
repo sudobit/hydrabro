@@ -7,8 +7,8 @@ import random
 CONST_PLAYERNAME = 0
 CONST_ELEMENT = 1
 CONST_ANCIENT = 2
-CONST_DREADFUL = 4
-CONST_LEGENDARY = 6
+CONST_DREADFUL = 3
+CONST_LEGENDARY = 4
 
 
 class Configuration:
@@ -30,7 +30,9 @@ class Configuration:
     def import_csv(self, filename):
         players = []
         with open(filename, newline='') as csvfile:
-            hero_reader = csv.reader(csvfile, delimiter=',', quotechar="|")
+            hero_reader = csv.reader(csvfile, delimiter=';', quotechar="|")
+            # Skips headlines
+            next(hero_reader)
             for row in hero_reader:
                 name = row[CONST_PLAYERNAME]
                 if name == "" or name == "NA":

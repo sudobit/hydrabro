@@ -8,6 +8,17 @@ parser.add_argument('--amount', action='store', dest='amount', type=int, default
                                                                                              " to create, default to "
                                                                                              "50.000")
 
+print("""
+ _   _           _          ______           
+| | | |         | |         | ___ \          
+| |_| |_   _  __| |_ __ __ _| |_/ /_ __ ___  
+|  _  | | | |/ _` | '__/ _` | ___ \ '__/ _ \ 
+| | | | |_| | (_| | | | (_| | |_/ / | | (_) |
+\_| |_/\__, |\__,_|_|  \__,_\____/|_|  \___/ 
+        __/ |                                
+       |___/                             """)
+print("Hero Wars Hydra Optimizer")
+
 
 def pretty_print(proposal):
     print("\n\n----- Configuration created on " + datetime.today().strftime('%Y-%m-%d') + "-----")
@@ -51,6 +62,8 @@ sorted_config = sorted(sorted_config, key=lambda c: c[4], reverse=True)
 
 for c in sorted_config[0:3]:
     pretty_print(c)
+
+print("All done, have fun with your gains!")
 
 
 
