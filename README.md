@@ -18,7 +18,7 @@ This is a python script, which helps to find the best possible solution to kill 
 
 ## Usage
 
-Before you can run the tool you have to provide your players attack numbers on the hydra heads. This data is read from an .csv file. Look at example.csv to understand the structure. Running the tool is quit easy, since only two parameters can be provided. 
+Before you can run the tool you have to provide your players attack numbers on the hydra heads. This data is read from an .csv file. Look at example.xlsx to understand the structure. Fill in your guilde members numbers and then export it to csv. Running the tool is quit easy, since only two parameters can be provided. 
 
 ```
 usage: hydrabro.py [-h] [--players CSV_FILE] [--amount AMOUNT]
